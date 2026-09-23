@@ -4,15 +4,15 @@ import Image from "next/image";
 import { Building2, Calendar, MapPin, Clock } from "lucide-react";
 
 const highlights = [
-  { icon: Building2, label: "Established",      value: "2025" },
-  { icon: Calendar,  label: "Allocation Date",  value: "12 August 2025" },
-  { icon: MapPin,    label: "Location",          value: "Ghaziabad, Uttar Pradesh" },
-  { icon: Clock,     label: "Availability",      value: "09:00 AM – 06:00 PM" },
+  { icon: Building2, label: "Established",     value: "2025" },
+  { icon: Calendar,  label: "Allocation Date", value: "12 August 2025" },
+  { icon: MapPin,    label: "Location",         value: "Ghaziabad, Uttar Pradesh" },
+  { icon: Clock,     label: "Availability",     value: "09:00 AM – 06:00 PM" },
 ];
 
 export default function About() {
   return (
-    <section id="about" aria-label="About RAD ROYALS PRIVATE LIMITED" className="py-28 md:py-36" style={{ backgroundColor: "var(--color-offwhite)" }}>
+    <section id="about" aria-label="About RAD ROYALS PRIVATE LIMITED" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* ── Section header ── */}
@@ -28,7 +28,9 @@ export default function About() {
           <div>
             <h2 className="display-lg text-charcoal mb-8 reveal-left">
               Driven by Vision.{" "}
-              <span className="italic text-navy-500">Defined by Precision.</span>
+              <span className="italic" style={{ color: "var(--color-navy-500)" }}>
+                Defined by Precision.
+              </span>
             </h2>
 
             <div className="space-y-5 mb-12">
@@ -38,7 +40,7 @@ export default function About() {
                 meaningful outcomes through precision, commitment and responsible
                 execution.
               </p>
-              <p className="body-base text-muted reveal-left" data-delay="150">
+              <p className="body-base reveal-left" data-delay="150">
                 Founded with a forward-looking mindset, the company aims to create
                 work that reflects quality, purpose and long-term value.
               </p>
@@ -49,8 +51,7 @@ export default function About() {
               {highlights.map(({ icon: Icon, label, value }) => (
                 <div
                   key={label}
-                  className="group p-5 border border-gray-100 hover:border-gold-500/40
-                             hover:shadow-gold transition-all duration-300 hover:-translate-y-0.5 bg-offwhite"
+                  className="group p-5 border border-gray-100 hover:border-gold-500/40 hover:shadow-gold transition-all duration-300 hover:-translate-y-0.5" style={{ backgroundColor: "var(--color-offwhite)" }}
                 >
                   <Icon
                     size={16}
@@ -64,30 +65,83 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Image */}
-          <div className="relative reveal-right">
-            <div className="relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/images/about-architecture.jpg"
-                alt="Contemporary architecture representing RAD ROYALS precision and craftsmanship"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+          {/* Right: Logo showcase */}
+          <div className="relative reveal-right flex flex-col items-center justify-center">
+
+            {/* Logo container — elegant centered display */}
+            <div
+              className="relative w-full flex items-center justify-center py-16 px-12"
+              style={{
+                background: "linear-gradient(135deg, var(--color-navy-950) 0%, var(--color-navy-700) 100%)",
+              }}
+            >
+              {/* Animated gold grid background */}
+              <div
+                className="absolute inset-0 opacity-10 pointer-events-none"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(rgba(201,164,81,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(201,164,81,0.15) 1px, transparent 1px)",
+                  backgroundSize: "40px 40px",
+                }}
+                aria-hidden="true"
               />
-              {/* Gold border accent */}
-              <div className="absolute inset-0 border border-gold-500/20 pointer-events-none" />
+
+              {/* Corner accents */}
+              <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2" style={{ borderColor: "var(--color-gold-500)" }} aria-hidden="true" />
+              <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2" style={{ borderColor: "var(--color-gold-500)" }} aria-hidden="true" />
+              <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2" style={{ borderColor: "var(--color-gold-500)" }} aria-hidden="true" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2" style={{ borderColor: "var(--color-gold-500)" }} aria-hidden="true" />
+
+              {/* Logo */}
+              <div className="relative z-10 flex flex-col items-center gap-6">
+                <div className="relative w-44 h-44 animate-float drop-shadow-2xl">
+                  <Image
+                    src="/images/logo.png"
+                    alt="RAD ROYALS PRIVATE LIMITED Official Logo"
+                    fill
+                    className="object-contain"
+                    sizes="176px"
+                  />
+                </div>
+
+                {/* Brand name below logo */}
+                <div className="text-center">
+                  <p className="font-display text-white text-2xl font-semibold tracking-widest leading-none">
+                    RAD ROYALS
+                  </p>
+                  <p
+                    className="font-body text-[10px] font-semibold tracking-[0.4em] uppercase mt-2"
+                    style={{ color: "var(--color-gold-500)" }}
+                  >
+                    Private Limited
+                  </p>
+                  <div
+                    className="w-12 h-px mx-auto mt-3"
+                    style={{ background: "var(--color-gold-500)" }}
+                    aria-hidden="true"
+                  />
+                  <p
+                    className="font-display italic text-sm mt-3"
+                    style={{ color: "rgba(201,164,81,0.6)" }}
+                  >
+                    Recognised by Visionaries
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Floating accent card */}
-            <div className="absolute -bottom-6 -left-6 bg-navy-500 px-6 py-5 shadow-premium animate-float">
-              <p className="font-display text-gold-400 text-3xl font-light leading-none">2025</p>
-              <p className="font-body text-white/60 text-[10px] tracking-widest uppercase mt-1">
+            {/* Floating year badge */}
+            <div
+              className="absolute -bottom-5 -left-5 px-6 py-4 shadow-premium animate-float"
+              style={{ background: "var(--color-navy-500)" }}
+            >
+              <p className="font-display text-3xl font-light leading-none" style={{ color: "var(--color-gold-400)" }}>
+                2025
+              </p>
+              <p className="font-body text-[10px] tracking-widest uppercase mt-1" style={{ color: "rgba(255,255,255,0.5)" }}>
                 Founded
               </p>
             </div>
-
-            {/* Decorative corner element */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-gold-500/40" aria-hidden="true" />
           </div>
         </div>
       </div>

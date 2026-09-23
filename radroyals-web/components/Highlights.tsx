@@ -31,7 +31,7 @@ export default function Highlights() {
   return (
     <section
       aria-label="Company Highlights"
-      className="py-24 bg-navy-500 relative overflow-hidden"
+      className="py-16 bg-navy-500 relative overflow-hidden"
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 animated-grid opacity-30 pointer-events-none" aria-hidden="true" />

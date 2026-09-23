@@ -12,7 +12,7 @@ Director:
 **ARCHNA SRIVASTAVA**
 
 Office Address:
-**C-606, 6th Floor, Blue Moon Homes, Raj Nagar Extension, Ghaziabad, Uttar Pradesh, India - 201017**
+**Raj Nagar Extension, Ghaziabad, Uttar Pradesh, India - 201017**
 
 Allocation Date:
 **12th August 2025**
@@ -412,7 +412,6 @@ Email:
 [radroyals25@gmail.com](mailto:radroyals25@gmail.com)
 
 Office:
-C-606, 6th Floor,
 Blue Moon Homes,
 Raj Nagar Extension,
 Ghaziabad,
@@ -475,7 +474,6 @@ Contact:
 
 Address:
 
-C-606, 6th Floor, Blue Moon Homes,
 Raj Nagar Extension,
 Ghaziabad, Uttar Pradesh - 201017
 

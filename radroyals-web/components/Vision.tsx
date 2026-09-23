@@ -5,7 +5,7 @@ export default function Vision() {
     <section
       id="vision"
       aria-label="Our Vision"
-      className="py-28 md:py-36 bg-white"
+      className="py-16 md:py-24 bg-white"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -63,8 +63,8 @@ export default function Vision() {
             ].map(({ num, label, desc }, i) => (
               <div
                 key={num}
-                className="flex gap-6 p-6 border border-gray-100 hover:border-gold-500/30 hover:shadow-card transition-all duration-300 bg-offwhite group"
-                style={{ transitionDelay: `${i * 60}ms` }}
+                className="flex gap-6 p-6 border border-gray-100 hover:border-gold-500/30 hover:shadow-card transition-all duration-300 group"
+                style={{ backgroundColor: "var(--color-offwhite)", transitionDelay: `${i * 60}ms` }}
               >
                 {/* Number */}
                 <div className="flex-shrink-0 pt-1">

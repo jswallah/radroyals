@@ -42,7 +42,7 @@ export default function Values() {
     <section
       id="philosophy"
       aria-label="Our Philosophy and Values"
-      className="py-28 md:py-36"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "var(--color-offwhite)" }}
     >
       <div className="max-w-7xl mx-auto px-6">

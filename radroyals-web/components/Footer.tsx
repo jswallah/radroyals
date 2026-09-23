@@ -4,11 +4,11 @@ import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = [
-  { label: "Home",           href: "#home" },
-  { label: "About",          href: "#about" },
-  { label: "Vision",         href: "#vision" },
-  { label: "Leadership",     href: "#leadership" },
-  { label: "Contact",        href: "#contact" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Vision", href: "#vision" },
+  { label: "Leadership", href: "#leadership" },
+  { label: "Contact", href: "#contact" },
   { label: "Privacy Policy", href: "#" },
 ];
 
@@ -80,7 +80,6 @@ export default function Footer() {
                   id="footer-address"
                   className="font-body text-sm not-italic leading-relaxed"
                 >
-                  C-606, 6th Floor, Blue Moon Homes,<br />
                   Raj Nagar Extension, Ghaziabad,<br />
                   Uttar Pradesh, India – 201017
                 </address>
@@ -121,11 +120,11 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 text-sm">
               {[
-                { label: "Entity",       value: "Private Limited" },
-                { label: "Established",  value: "2025" },
-                { label: "Allotment",    value: "12 August 2025" },
-                { label: "Domain",       value: "radroyals.in" },
-                { label: "Director",     value: "Archna Srivastava" },
+                { label: "Entity", value: "Private Limited" },
+                { label: "Established", value: "2025" },
+                { label: "Allotment", value: "12 August 2025" },
+                { label: "Domain", value: "radroyals.in" },
+                { label: "Director", value: "Archna Srivastava" },
               ].map(({ label, value }) => (
                 <div key={label} className="flex justify-between gap-4">
                   <span className="text-white/30 tracking-wide text-xs">{label}</span>

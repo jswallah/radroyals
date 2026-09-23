@@ -7,7 +7,7 @@ export default function Leadership() {
     <section
       id="leadership"
       aria-label="Leadership"
-      className="py-28 md:py-36"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "var(--color-offwhite)" }}
     >
       <div className="max-w-7xl mx-auto px-6">

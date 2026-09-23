@@ -43,10 +43,10 @@ export default function HomePage() {
       <main id="main-content">
         <Hero />
         <About />
+        <Leadership />
         <Vision />
         <Values />
         <Highlights />
-        <Leadership />
         <BrandStory />
         <Contact />
       </main>

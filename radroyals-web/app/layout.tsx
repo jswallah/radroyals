@@ -56,6 +56,16 @@ export const metadata: Metadata = {
       "RAD ROYALS PRIVATE LIMITED — Building with vision and delivering with precision from Ghaziabad, Uttar Pradesh.",
     images: ["/images/hero-architecture.jpg"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/logo.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   robots: {
     index: true,
     follow: true,

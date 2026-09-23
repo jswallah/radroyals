@@ -26,7 +26,7 @@ export default function BrandStory() {
       <div className="absolute inset-0 animated-grid opacity-20 pointer-events-none" aria-hidden="true" />
 
       {/* ── Content ── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div className="max-w-2xl">
 
           <span className="section-label text-gold-400/70 reveal">Brand Philosophy</span>

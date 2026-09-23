@@ -37,7 +37,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Office",
-    value: "C-606, 6th Floor, Blue Moon Homes,\nRaj Nagar Extension, Ghaziabad,\nUttar Pradesh, India – 201017",
+    value: "Raj Nagar Extension, Ghaziabad,\nUttar Pradesh, India – 201017",
     href: null,
     id: "contact-address",
   },
@@ -64,12 +64,12 @@ export default function Contact() {
 
   const validate = (): FormErrors => {
     const e: FormErrors = {};
-    if (!form.fullName.trim())        e.fullName = "Full name is required.";
-    if (!form.email.trim())           e.email = "Email address is required.";
+    if (!form.fullName.trim()) e.fullName = "Full name is required.";
+    if (!form.email.trim()) e.email = "Email address is required.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Enter a valid email address.";
     if (form.phone && !/^\+?[\d\s\-()]{7,15}$/.test(form.phone)) e.phone = "Enter a valid phone number.";
-    if (!form.subject.trim())         e.subject = "Subject is required.";
-    if (!form.message.trim())         e.message = "Message is required.";
+    if (!form.subject.trim()) e.subject = "Subject is required.";
+    if (!form.message.trim()) e.message = "Message is required.";
     else if (form.message.trim().length < 20) e.message = "Message must be at least 20 characters.";
     return e;
   };
@@ -100,7 +100,7 @@ export default function Contact() {
     <section
       id="contact"
       aria-label="Contact RAD ROYALS PRIVATE LIMITED"
-      className="py-28 md:py-36 bg-white"
+      className="py-16 md:py-24 bg-white"
     >
       <div className="max-w-7xl mx-auto px-6">
 
